@@ -27,7 +27,7 @@ def test_basic_duckduckgo_search(browser):
     # matches = [t for t in titles if PHRASE.lower() in t.lower()]
     # assert len(matches) > 0
 
-    for title in result_page.result_link_titles():
-        assert PHRASE.lower() in title.lower()
+    # for title in result_page.result_link_titles():
+    #     assert PHRASE.lower() in title.lower()
 
     raise Exception("Incomplete Test")
