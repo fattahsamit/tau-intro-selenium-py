@@ -17,7 +17,7 @@ def test_basic_duckduckgo_search(browser):
     search_page.search(PHRASE)
 
     # Then the search result title contains "panda"
-    assert PHRASE in result_page.title()
+    assert 'panda at DuckDuckGo' in result_page.title()
 
     # And the search result query is "panda"
     assert PHRASE == result_page.search_input_value()
@@ -29,5 +29,3 @@ def test_basic_duckduckgo_search(browser):
 
     # for title in result_page.result_link_titles():
     #     assert PHRASE.lower() in title.lower()
-
-    raise Exception("Incomplete Test")

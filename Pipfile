@@ -8,6 +8,7 @@ verify_ssl = true
 [packages]
 pytest = "*"
 selenium = "*"
+atomicwrites = "*"
 
 [requires]
 python_version = "3.11"
