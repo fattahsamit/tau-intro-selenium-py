@@ -9,6 +9,9 @@ import selenium.webdriver
 @pytest.fixture
 def browser():
     # Setup Phase
+    # Initialize the ChromeDriver instance
+    # b = selenium.webdriver.Chrome()
+
     # Initialize the EdgeDriver instance
     b = selenium.webdriver.Edge()
 
