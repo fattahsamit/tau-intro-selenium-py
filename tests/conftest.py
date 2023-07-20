@@ -12,6 +12,9 @@ def browser():
     # Initialize the ChromeDriver instance
     # b = selenium.webdriver.Chrome()
 
+    # Initialize the geckodriver instance
+    # b = selenium.webdriver.Firefox()
+
     # Initialize the EdgeDriver instance
     b = selenium.webdriver.Edge()
 
