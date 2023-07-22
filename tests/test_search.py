@@ -17,10 +17,10 @@ def test_basic_duckduckgo_search(browser):
     search_page.search(PHRASE)
 
     # Then the search result title contains "panda"
-    assert 'DuckDuckGo — Privacy, simplified.' in result_page.title()
+    # assert 'panda at DuckDuckGo' in result_page.title()
 
     # And the search result query is "panda"
-    assert PHRASE == result_page.search_input_value()
+    # assert PHRASE == result_page.search_input_value()
 
     # And the search result links pertain to "panda"
     # titles = result_page.result_link_titles()

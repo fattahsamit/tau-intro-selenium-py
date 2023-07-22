@@ -1,0 +1,4 @@
+{
+  "browser": "Headless Edge",
+  "implicit_wait": 10
+}
