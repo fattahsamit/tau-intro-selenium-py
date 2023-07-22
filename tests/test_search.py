@@ -16,20 +16,18 @@ def test_basic_duckduckgo_search(browser):
     # When the user searches for "panda"
     search_page.search(PHRASE)
 
-    # Then the search result title contains "panda"
     '''
     # Explicit Waits
     import time
     time.sleep(5)
     '''
-
+    '''
     # Implicit Waits
     from selenium.webdriver.support.wait import WebDriverWait
     from selenium.webdriver.support import expected_conditions as EC
     WebDriverWait(browser, 10).until(
         EC.title_contains(PHRASE+' at DuckDuckGo'))
-
-    assert PHRASE+' at DuckDuckGo' in result_page.title()
+    '''
 
     # And the search result query is "panda"
     assert PHRASE == result_page.search_input_value()
@@ -41,3 +39,6 @@ def test_basic_duckduckgo_search(browser):
 
     for title in result_page.result_link_titles():
         assert PHRASE.lower() in title.lower()
+
+    # Then the search result title contains "panda"
+    assert PHRASE+' at DuckDuckGo' in result_page.title()
